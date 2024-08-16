@@ -1,0 +1,21 @@
+{
+  "name": "car-rent",
+  "version": "1.0.1",
+  "description": "Car rental website",
+  "main": "controller.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "parcel": "^2.12.0",
+    "prettier": "^2.3.0"
+  },
+  "author": "karan",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/transformer-js": "^2.12.0"
+  }
+}
