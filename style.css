@@ -12,12 +12,12 @@ body {
 
 .home {
   height: 550px;
-  background-color: rgba(0, 68, 95, 0.548);
+  background-color: rgba(1, 26, 37, 0.733);
 }
 
 .header {
-  padding: 10px 8%;
-  background-color: rgba(140, 138, 163, 0.418);
+  padding: 10px 6%;
+  background-color: rgba(62, 67, 70, 0.418);
   display: flex;
   justify-content: space-between;
 }
@@ -48,11 +48,12 @@ body {
   border-radius: 5px;
   font-size: 1.2rem;
   padding: 15px 20px;
-  margin: 0px 15px;
+  margin: 0px 10px;
   color: white;
 }
 
 .region {
+  border-radius: 20px;
   padding: 0px;
   width: 40px;
   height: 40px;
@@ -72,7 +73,7 @@ body {
   left: 0px;
   height: 550px;
   width: 100%;
-  background-image: url('./src/img/reBackground.jpg');
+  background-image: url('./public/reBackground.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -115,6 +116,11 @@ body {
   transition: all ease-in-out 0.3s;
 }
 
+.stylishActiveButton {
+  border: 1px solid rgb(99, 87, 87);
+  background-color: rgba(120, 173, 226, 0.267);
+}
+
 .runPlane {
   transform: rotate(90deg);
 }
@@ -126,12 +132,14 @@ body {
     scale: 1.2;
   }
   .runPlane {
-    transform: translate(100vw, -50vh);
-    transition: all ease-in 3s;
+    transform: translate(70vw, -45vh);
+    opacity: 0.01;
+    transition: all ease-in 2s;
   }
   .runBike {
-    transition: all ease-in 3s;
-    transform: translateX(100vw);
+    opacity: 0.01;
+    transition: all ease-in 2s;
+    transform: translateX(55vw);
   }
 }
 
@@ -162,19 +170,33 @@ body {
 }
 
 form {
-  background-color: rgb(52, 52, 155);
+  background-color: rgb(30, 134, 126);
   border-radius: 20px;
+  padding: 5px;
   display: flex;
   justify-content: center;
 }
 
 .input {
+  width: 30%;
   border: 1px solid rgba(128, 128, 128, 0.616);
   font-size: 1.3rem;
-  padding: 15px 10px;
-  margin: 10px;
+  padding: 12px 2px;
+  margin: 5px;
   text-align: center;
   border-radius: 10px;
+}
+
+.timer {
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.zeroVisibility {
+  visibility: hidden;
 }
 
 .search__button {
@@ -232,7 +254,7 @@ form {
 }
 
 .brand {
-  background-color: rgb(240, 238, 237);
+  background-color: rgb(235, 230, 230);
   border-radius: 5px;
   box-shadow: 10px 10px;
   padding: 10px;
@@ -247,8 +269,6 @@ form {
   grid-gap: 10px;
   margin-top: 100px;
   height: 70px;
-  align-items: center;
-  justify-content: center;
 }
 
 .ktm {
